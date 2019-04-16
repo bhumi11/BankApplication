@@ -16,6 +16,9 @@ export class CardListComponent implements OnInit {
    * this variable will be used to display the list of records.
    */
   public bankDetails: Bank[];
+  /**
+   * all the records of the summary will be stored in this variable.
+   */
   public summaryDetails: string[]=[];
   constructor(private bankService: BankService) { }
 
@@ -30,7 +33,7 @@ export class CardListComponent implements OnInit {
     this.bankService.getAllBankDetails().subscribe((response: Bank[]) => {
       this.bankDetails = response;
       this.convertCurrency(this.bankDetails);
-      // this.getBank(this.bankDetails);
+      this.getBank(this.bankDetails);
      });
   }
 
@@ -50,7 +53,10 @@ export class CardListComponent implements OnInit {
   /** band name for summary  */
   public getBank(bankDetails : Bank[]): void{
     bankDetails.filter(bankRecords =>{
-      this.summaryDetails.push(bankRecords.name);
+      if (this.summaryDetails.indexOf(bankRecords.name) === -1) {
+        this.summaryDetails.push(bankRecords.name);
+    }
+     // this.summaryDetails.push(bankRecords.name);
       console.log('nameee',this.summaryDetails);
     })
   }

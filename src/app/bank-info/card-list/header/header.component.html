@@ -1,8 +1,8 @@
 <h4>Card Summary</h4>
 <div class="card-group">
-  <div class="card">
+  <div class="card" *ngFor="let index of summaryData">
     <div class="card-body" >
-      <h5 class="card-title"> bankCard.name </h5>
+      <h5 class="card-title"> {{ index }} </h5>
       <p class="card-text"><small class="text-muted">Total Converted Amount: bankCard.total </small></p>
     </div>
   </div>

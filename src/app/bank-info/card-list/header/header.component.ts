@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  /** 
+   * this summary data value is used to show the summary details
+   * and its value is got from card list component using input decorator
+   */
+  @Input() public summaryData: any;
   constructor() { }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
 }
