@@ -1,0 +1,46 @@
+{
+  "Bank": [
+    {
+      "id": 1,
+      "name": "HDFC",
+      "baseCurrency": "USD",
+      "amount": "2",
+      "targetCurrency": "INR"
+    },
+    {
+      "name": "hdc",
+      "baseCurrency": "USD",
+      "amount": 3,
+      "targetCurrency": "RUB",
+      "id": 2
+    },
+    {
+      "name": "AXIS",
+      "baseCurrency": "INR",
+      "amount": 1,
+      "targetCurrency": "USD",
+      "id": 3
+    },
+    {
+      "name": "sbi",
+      "baseCurrency": "CZK",
+      "amount": 1,
+      "targetCurrency": "NOK",
+      "id": 4
+    },
+    {
+      "name": "HDFC",
+      "baseCurrency": "USD",
+      "amount": 3,
+      "targetCurrency": "INR",
+      "id": 5
+    },
+    {
+      "name": "HDFC",
+      "baseCurrency": "BGN",
+      "amount": 2,
+      "targetCurrency": "AUD",
+      "id": 6
+    }
+  ]
+}

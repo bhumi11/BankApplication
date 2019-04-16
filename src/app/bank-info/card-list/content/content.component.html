@@ -1,0 +1,13 @@
+<h4>Card List</h4>
+<div class="card-group">
+  <div class="card" *ngFor="let bankCard of cardData">
+    <div class="card-body" >
+      <h5 class="card-title">{{ bankCard.name }}</h5>
+      <p class="card-text">Base Currency: {{ bankCard.baseCurrency}}</p>
+      <p class="card-text">Target Currency: {{ bankCard.targetCurrency }}</p>
+      <p class="card-text">Amount: {{ bankCard.amount}}</p>
+      <p class="card-text"><small class="text-muted">Rate: {{ bankCard.rate }} {{ bankCard.targetCurrency }}</small></p>
+      <p class="card-text"><small class="text-muted">Total Converted Amount: {{ bankCard.total }} {{ bankCard.targetCurrency }}</small></p>
+    </div>
+  </div>
+</div>
